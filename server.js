@@ -25,8 +25,8 @@ app.get("/api/hello", (req, res) => {
 });
 
 // Connection to routes
-// const DetailsRouter = require("./routes/Details.js");
-// app.use("/details", DetailsRouter);
+const AppuserRouter = require("./routes/Appuser.js");
+app.use("/users", AppuserRouter);
 
 // Serve React static files (after running npm run build)
 app.use(express.static(path.join(__dirname, "build")));

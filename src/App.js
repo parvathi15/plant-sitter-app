@@ -5,14 +5,16 @@ import Login from "./Components/Login";
 import Signup from "./Components/Signup";
 import Random from './Components/Random';
 
+
 function App() {
   return (
     <Router>
     <div className="App">
    
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/add" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/random" element={<Random />} />
       </Routes>
     </div>
